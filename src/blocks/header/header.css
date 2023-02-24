@@ -1,0 +1,25 @@
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(84, 84, 84, 0.7);
+  padding-bottom: 31.5px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-bottom: 36px;
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    max-width: 880px;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-bottom: 40px;
+  }
+}

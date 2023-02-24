@@ -1,0 +1,18 @@
+.profile__overlay {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__overlay {
+    margin-right: 0;
+  }
+}
+
+.profile__overlay:hover > .profile__avatar-button {
+  visibility: visible;
+  opacity: 1;
+}
