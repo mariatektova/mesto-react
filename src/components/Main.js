@@ -2,28 +2,29 @@ import React, { useState, useEffect } from "react";
 import { api } from "../utils/api.js";
 import Card from "./Card.js";
 
-function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick}) {
+function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick }) {
   const [userName, setUserName] = useState("");
   const [userDescription, setUserDescription] = useState("");
   const [userAvatar, setUserAvatar] = useState("");
   const [cards, setCards] = useState([]);
 
-
- useEffect(() => {
-     api.getInfo().then((profileInfo) => {
-       setUserName(profileInfo.name)
-       setUserDescription(profileInfo.about)
-       setUserAvatar(profileInfo.avatar)
-     })
-     api.getCards().then((dataCard) => {
-       setCards(dataCard.map((data) => ({
-         cardId: data._id,
-         name: data.name,
-         link: data.link,
-         likes: data.likes
-       })))
-     })
-   }, []);
+  useEffect(() => {
+    api.getInfo().then((profileInfo) => {
+      setUserName(profileInfo.name);
+      setUserDescription(profileInfo.about);
+      setUserAvatar(profileInfo.avatar);
+    });
+    api.getCards().then((dataCard) => {
+      setCards(
+        dataCard.map((data) => ({
+          cardId: data._id,
+          name: data.name,
+          link: data.link,
+          likes: data.likes,
+        }))
+      );
+    });
+  }, []);
   return (
     <main className="main">
       <section className="profile">
@@ -60,13 +61,11 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick}) {
       </section>
       <section className="elements">
         <ul className="elements__list">
-            {cards.map((card) => (
-             <Card
-              card={card}
-               onCardClick={onCardClick}/>
-           ))}
-           </ul>
-        </section>
+          {cards.map((card, cardId) => (
+            <Card key={cardId} card={card} onCardClick={onCardClick} />
+          ))}
+        </ul>
+      </section>
     </main>
   );
 }
