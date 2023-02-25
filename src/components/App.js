@@ -5,7 +5,6 @@ import Footer from "./Footer";
 import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
 
-
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
@@ -21,15 +20,15 @@ function App() {
   function handleAddPlace() {
     setIsAddPlacePopupOpen(true);
   }
-  function handleCardClick(data){
-    setSelectedCard(data)
-  };
+  function handleCardClick(data) {
+    setSelectedCard(data);
+  }
 
   function closePopups() {
     setIsEditProfilePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setIsAddPlacePopupOpen(false);
-    setSelectedCard(false)
+    setSelectedCard(false);
   }
   return (
     <div className="page">
@@ -135,7 +134,11 @@ function App() {
           </label>
         </fieldset>
       </PopupWithForm>
-      <ImagePopup card={selectedCard} onClose={closePopups}/>
+      <ImagePopup
+        card={selectedCard}
+        onClose={closePopups}
+        isOpen={selectedCard}
+      />
     </div>
   );
 }
