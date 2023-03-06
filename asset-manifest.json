@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/mariatektova/mesto-react/static/css/main.981479c1.css",
-    "main.js": "/mariatektova/mesto-react/static/js/main.18985ca4.js",
-    "static/js/787.5530211c.chunk.js": "/mariatektova/mesto-react/static/js/787.5530211c.chunk.js",
-    "static/media/Inter-Black.woff": "/mariatektova/mesto-react/static/media/Inter-Black.fd37f7e052bea1018058.woff",
-    "static/media/Inter-Medium.woff": "/mariatektova/mesto-react/static/media/Inter-Medium.7ddb89dcdb33dd761944.woff",
-    "static/media/Inter-Regular.woff": "/mariatektova/mesto-react/static/media/Inter-Regular.34ed58565339f4f3be40.woff",
-    "static/media/Inter-Black.woff2": "/mariatektova/mesto-react/static/media/Inter-Black.141c7af6ed109b318513.woff2",
-    "static/media/Inter-Medium.woff2": "/mariatektova/mesto-react/static/media/Inter-Medium.6db7e439cc4b0e5c0cd2.woff2",
-    "static/media/Inter-Regular.woff2": "/mariatektova/mesto-react/static/media/Inter-Regular.4c96ed73beaf6d1e6cc7.woff2",
-    "static/media/like.svg": "/mariatektova/mesto-react/static/media/like.87ed371465c7a6a1cd01.svg",
-    "index.html": "/mariatektova/mesto-react/index.html",
-    "static/media/delete-btn.svg": "/mariatektova/mesto-react/static/media/delete-btn.823b0cf1b0b7e9cb7cad.svg",
-    "static/media/like_active.svg": "/mariatektova/mesto-react/static/media/like_active.d280643c4a67fbc60483.svg",
-    "static/media/__button.svg": "/mariatektova/mesto-react/static/media/__button.2f7be95ab48bbff7d88c.svg",
-    "static/media/avatar_button.svg": "/mariatektova/mesto-react/static/media/avatar_button.a086f758840ae814ecde.svg",
-    "static/media/plus.svg": "/mariatektova/mesto-react/static/media/plus.54b1426515811a15ebaf.svg",
-    "static/media/close.svg": "/mariatektova/mesto-react/static/media/close.b793e07c3f4c19e26c11.svg",
-    "main.981479c1.css.map": "/mariatektova/mesto-react/static/css/main.981479c1.css.map",
-    "main.18985ca4.js.map": "/mariatektova/mesto-react/static/js/main.18985ca4.js.map",
-    "787.5530211c.chunk.js.map": "/mariatektova/mesto-react/static/js/787.5530211c.chunk.js.map"
+    "main.css": "/mesto-react/static/css/main.a80fe9b3.css",
+    "main.js": "/mesto-react/static/js/main.a0b0fc19.js",
+    "static/js/787.5530211c.chunk.js": "/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Black.woff": "/mesto-react/static/media/Inter-Black.fd37f7e052bea1018058.woff",
+    "static/media/Inter-Medium.woff": "/mesto-react/static/media/Inter-Medium.7ddb89dcdb33dd761944.woff",
+    "static/media/Inter-Regular.woff": "/mesto-react/static/media/Inter-Regular.34ed58565339f4f3be40.woff",
+    "static/media/Inter-Black.woff2": "/mesto-react/static/media/Inter-Black.141c7af6ed109b318513.woff2",
+    "static/media/Inter-Medium.woff2": "/mesto-react/static/media/Inter-Medium.6db7e439cc4b0e5c0cd2.woff2",
+    "static/media/Inter-Regular.woff2": "/mesto-react/static/media/Inter-Regular.4c96ed73beaf6d1e6cc7.woff2",
+    "static/media/like.svg": "/mesto-react/static/media/like.87ed371465c7a6a1cd01.svg",
+    "index.html": "/mesto-react/index.html",
+    "static/media/delete-btn.svg": "/mesto-react/static/media/delete-btn.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like_active.svg": "/mesto-react/static/media/like_active.d280643c4a67fbc60483.svg",
+    "static/media/__button.svg": "/mesto-react/static/media/__button.2f7be95ab48bbff7d88c.svg",
+    "static/media/avatar_button.svg": "/mesto-react/static/media/avatar_button.a086f758840ae814ecde.svg",
+    "static/media/plus.svg": "/mesto-react/static/media/plus.54b1426515811a15ebaf.svg",
+    "static/media/close.svg": "/mesto-react/static/media/close.b793e07c3f4c19e26c11.svg",
+    "main.a80fe9b3.css.map": "/mesto-react/static/css/main.a80fe9b3.css.map",
+    "main.a0b0fc19.js.map": "/mesto-react/static/js/main.a0b0fc19.js.map",
+    "787.5530211c.chunk.js.map": "/mesto-react/static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.981479c1.css",
-    "static/js/main.18985ca4.js"
+    "static/css/main.a80fe9b3.css",
+    "static/js/main.a0b0fc19.js"
   ]
 }
