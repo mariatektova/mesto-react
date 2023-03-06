@@ -29,8 +29,8 @@ class Api {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
-        name: data.username,
-        about: data.job,
+        name: data.name,
+        about: data.about,
       }),
     }).then(this._getServerAnswer);
   }
@@ -50,20 +50,13 @@ class Api {
       headers: this._headers,
     }).then(this._getServerAnswer);
   }
-  putLikes(cardID) {
-    return fetch(`${this._url}/cards/${cardID}/likes`, {
-      method: "PUT",
-      headers: this._headers,
-    })
-      .then(this._getServerAnswer)
-      .catch((err) => console.log(`Ошибка: что-то пошло не так: ${err}`));
-  }
-  deleteLikes(cardID) {
-    return fetch(`${this._url}/cards/${cardID}/likes`, {
-      method: "DELETE",
+  changeLikeCardStatus(cardId, isLiked) {
+    return fetch(`${this._url}/cards/${cardId}/likes`, {
+      method: `${!isLiked ? "DELETE" : "PUT"}`,
       headers: this._headers,
     }).then(this._getServerAnswer);
   }
+
   changeAvatar(data) {
     return fetch(`${this._url}/users/me/avatar`, {
       method: "PATCH",
