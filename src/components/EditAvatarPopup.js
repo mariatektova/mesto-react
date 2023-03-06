@@ -5,10 +5,6 @@ import { useEffect, useRef } from "react";
 function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
   const avatarRef = useRef("");
 
-  function handleChangeAvatar() {
-    return avatarRef.current.value;
-  }
-
   useEffect(() => {
     avatarRef.current.value = "";
   }, [isOpen]);
@@ -18,7 +14,6 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
     onUpdateAvatar({
       avatar: avatarRef.current.value,
     });
-    
   }
 
   return (
@@ -41,7 +36,6 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar }) {
             required
             minLength="2"
             maxLength="200"
-            onChange={handleChangeAvatar}
             ref={avatarRef}
           />
           <span className="form__input-error avatar-input-error"></span>

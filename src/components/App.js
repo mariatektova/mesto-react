@@ -15,24 +15,35 @@ function App() {
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
-  const [currentUser, setCurrentUser] = useState("");
+  const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    api.getInfo().then((profileInfo) => {
-      setCurrentUser(profileInfo);
-    });
-    api.getCards().then((dataCard) => {
-      setCards(
-        dataCard.map((data) => ({
-          _id: data._id,
-          name: data.name,
-          link: data.link,
-          likes: data.likes,
-          owner: data.owner,
-        }))
-      );
-    });
+    api
+      .getInfo()
+      .then((profileInfo) => {
+        setCurrentUser(profileInfo);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    api
+      .getCards()
+      .then((cardsData) => {
+        setCards(
+          cardsData.map((card) => ({
+            _id: card._id,
+            name: card.name,
+            link: card.link,
+            likes: card.likes,
+            owner: card.owner,
+          }))
+        );
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   function handleCardLike(card) {
@@ -59,9 +70,9 @@ function App() {
       });
   }
 
-  function handleUpdateUser(updatedInfo) {
+  function handleUpdateUser(newInfo) {
     api
-      .setInfo(updatedInfo)
+      .setInfo(newInfo)
       .then((data) => {
         setCurrentUser(data);
         closePopups();
@@ -70,9 +81,9 @@ function App() {
         console.log(`Ошибка: ${err}`);
       });
   }
-  function handleUpdateAvatar(updateAvatar) {
+  function handleUpdateAvatar(newAvatar) {
     api
-      .changeAvatar(updateAvatar)
+      .changeAvatar(newAvatar)
       .then((data) => {
         setCurrentUser(data);
         closePopups();
@@ -84,8 +95,8 @@ function App() {
   function handleAddPlaceSubmit(data) {
     api
       .postCard(data)
-      .then((createCard) => {
-        setCards([createCard, ...cards]);
+      .then((newCard) => {
+        setCards([newCard, ...cards]);
         closePopups();
       })
       .catch((err) => {
