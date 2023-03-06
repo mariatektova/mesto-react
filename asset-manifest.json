@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mariatektova/mesto-react/static/css/main.981479c1.css",
-    "main.js": "/mariatektova/mesto-react/static/js/main.2407cf71.js",
+    "main.js": "/mariatektova/mesto-react/static/js/main.18985ca4.js",
     "static/js/787.5530211c.chunk.js": "/mariatektova/mesto-react/static/js/787.5530211c.chunk.js",
     "static/media/Inter-Black.woff": "/mariatektova/mesto-react/static/media/Inter-Black.fd37f7e052bea1018058.woff",
     "static/media/Inter-Medium.woff": "/mariatektova/mesto-react/static/media/Inter-Medium.7ddb89dcdb33dd761944.woff",
@@ -18,11 +18,11 @@
     "static/media/plus.svg": "/mariatektova/mesto-react/static/media/plus.54b1426515811a15ebaf.svg",
     "static/media/close.svg": "/mariatektova/mesto-react/static/media/close.b793e07c3f4c19e26c11.svg",
     "main.981479c1.css.map": "/mariatektova/mesto-react/static/css/main.981479c1.css.map",
-    "main.2407cf71.js.map": "/mariatektova/mesto-react/static/js/main.2407cf71.js.map",
+    "main.18985ca4.js.map": "/mariatektova/mesto-react/static/js/main.18985ca4.js.map",
     "787.5530211c.chunk.js.map": "/mariatektova/mesto-react/static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.981479c1.css",
-    "static/js/main.2407cf71.js"
+    "static/js/main.18985ca4.js"
   ]
 }
